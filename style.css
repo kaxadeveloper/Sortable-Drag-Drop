@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background-color: white;
+}
+
+.fill {
+    background-image: url(images/mount-fuji-2297961_1280.jpg);
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hold{
+    border: 5px solid #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+@media (max-width:870px){
+    body{
+        flex-direction: column;
+    }
+}
